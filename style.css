@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan";
+}
+
+h1 {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6% 9% 6% 9%;
+}
+
+.headerAndRatesContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header {
+  width: 35%;
+}
+
+h2 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3em;
+  word-spacing: 1px;
+}
+
+header p {
+  color: hsl(303, 10%, 53%);
+  margin: 10px 0 0 0;
+  font-size: 1.1em;
+  line-height: 25px;
+}
+
+.ratesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 0 25px 0;
+}
+
+.rates {
+  padding: 1.6em 2em;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: hsl(300, 24%, 96%);
+}
+
+.rates img {
+  margin: 0 2px;
+  height: 20px;
+}
+
+.rates p {
+  font-weight: 600;
+  margin: 0 0 0 30px;
+}
+
+.reviews {
+  position: relative;
+  left: -30%;
+}
+.guru {
+  position: relative;
+  left: -15%;
+}
+
+.buyerRatesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buyerRates {
+  width: 28%;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buyerRates img {
+  border-radius: 50%;
+  height: 50px;
+  display: inline-block;
+}
+
+.headerBuyerRates {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hthreeAndhfour {
+  margin: 0 0 0 25px;
+}
+
+h3 {
+  color: white;
+  font-size: 1em;
+}
+
+h4 {
+  color: hsl(333, 80%, 67%);
+  opacity: 0.7;
+}
+
+.buyerRates p {
+  color: white;
+}
+
+.irene {
+  position: relative;
+  top: 12%;
+}
+.anne {
+  position: relative;
+  top: 24%;
+}
+
+@media all and (max-width: 1300px) {
+  .irene {
+    top: 5%;
+  }
+  .anne {
+    top: 10%;
+  }
+
+  .headerBuyerRates {
+    margin: 0 0 10px 0;
+  }
+}
+
+footer {
+  width: 100%;
+  align-self: flex-end;
+  margin: 40px 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: hsl(261, 54%, 57%);
+  transition: 0.5s ease;
+  text-decoration: underline hsl(261, 54%, 57%);
+}
+
+@media all and (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buyerRatesContainer {
+    margin: 50px 0 0 0;
+  }
+
+  .irene,
+  .anne {
+    position: inherit;
+  }
+
+  .rates {
+    position: inherit;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .buyerRatesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buyerRates {
+    width: 80%;
+    margin: 30px 0;
+  }
+
+  .headerAndRatesContainer {
+    flex-direction: column;
+  }
+
+  .ratesContainer {
+    margin: 10px 0 0 0;
+  }
+
+  .rates {
+    margin: 10px 0;
+  }
+
+  header {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .buyerRates {
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+    margin: 0.1em 0 0 0;
+  }
+
+  header h2 {
+    font-size: 2em;
+  }
+  header p {
+    font-size: 1em;
+  }
+
+  .rates {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .rates p {
+    margin: 10px 0 0 0;
+  }
+
+  .buyerRates {
+    margin: 10px 0;
+  }
+}
